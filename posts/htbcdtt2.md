@@ -1,5 +1,5 @@
 ---
-title: "Làm cách nào để trở thành trẻ trâu như Dũng? Phần 2"
+title: "How to become a powerful young buffalo like Dungx?"
 date: "2023-08-03"
 ---
 

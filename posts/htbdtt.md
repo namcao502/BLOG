@@ -1,6 +1,6 @@
 ---
-title: "Làm cách nào để trở thành trẻ trâu như Dũng?"
-date: "2023-08-02"
+title: "How to become a powerful young buffalo like Dungx? Part 2"
+date: "2023-08-04"
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

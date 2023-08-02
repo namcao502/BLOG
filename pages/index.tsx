@@ -1,30 +1,31 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
 import { getSortedPostsData } from "../lib/posts";
+import Link from "next/link";
 import Date from "../components/date";
+import { GetStaticProps } from "next";
+import React from "react";
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
-export default function Home({ allPostsData }) {
+export default function Home({
+  allPostsData,
+}: {
+  allPostsData: {
+    date: string;
+    title: string;
+    id: string;
+  }[];
+}) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Là 1 trẻ trâu chứ cần gì phải giới thiệu]</p>
+        <p>[Young Buffalo Dungx]</p>
         <p>
-          (Dũng là trẻ trâu?{" "}
-          <Link href="/dtt3">Tại sao Dũng không phải là trẻ trâu</Link>.)
+          (Everyone believes that Dungx truly is a super young buffalo). <br />
+          <Link href="/dtt3">Don't agree?</Link>
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -44,3 +45,12 @@ export default function Home({ allPostsData }) {
     </Layout>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+};

@@ -1,8 +1,9 @@
+import React from "react";
 import Image from "next/image";
 import imgSrc from "../public/images/dungtt.jpg";
 import Head from "next/head";
-import Layout from "../components/layout.js";
-import { siteTitle } from "../components/layout.js";
+import Layout from "../components/layout";
+import { siteTitle } from "../components/layout";
 
 export default function FirstPost() {
   return (
@@ -10,11 +11,11 @@ export default function FirstPost() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <h2>Bố đùa thôi</h2>
+      <h2>Just kidding</h2>
 
-      <h1>Dũng trẻ trâu cấp 3</h1>
+      <h1>Super Saiyan 3 Dungx</h1>
 
-      <Image src={imgSrc} alt="Dũng trẻ trâu ssj3"></Image>
+      <Image src={imgSrc} alt="Dungx ssj3"></Image>
     </Layout>
   );
 }
