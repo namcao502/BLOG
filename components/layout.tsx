@@ -35,14 +35,17 @@ export default function Layout({
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/djj3.png"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
+            <div className="avatar">
+              <div className="w-24 mask mask-hexagon">
+                <Image
+                  priority
+                  src="/images/djj3.png"
+                  height={144}
+                  width={144}
+                  alt={name}
+                />
+              </div>
+            </div>
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
