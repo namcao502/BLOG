@@ -24,7 +24,7 @@ export default function Home({ allPostsData }) {
         <p>[Là 1 trẻ trâu chứ cần gì phải giới thiệu]</p>
         <p>
           (Dũng là trẻ trâu?{" "}
-          <Link href="/post">Tại sao Dũng không phải là trẻ trâu</Link>.)
+          <Link href="/dtt3">Tại sao Dũng không phải là trẻ trâu</Link>.)
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
