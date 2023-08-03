@@ -25,6 +25,18 @@
     line-height: 1.5;
 }
 
+.headingCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.paddingItem {
+    padding: 10px;
+}
+
 .borderCircle {
     border-radius: 9999px;
 }
@@ -34,7 +46,7 @@
 }
 
 .padding1px {
-    padding-top: 1px;
+    padding: 1px;
 }
 
 .list {
